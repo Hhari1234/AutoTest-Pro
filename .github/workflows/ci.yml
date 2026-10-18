@@ -21,6 +21,13 @@ jobs:
           java-version: '17'
           cache: maven
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: dashboard/package-lock.json
+
       - name: Install Google Chrome
         run: |
           sudo apt-get update
@@ -30,8 +37,19 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y google-chrome-stable
 
+      - name: Install dashboard dependencies
+        working-directory: dashboard
+        run: npm ci
+
       - name: Run TestNG suite
         run: mvn clean test -Dheadless=true
+
+      - name: Generate dashboard data
+        run: node scripts/generate-dashboard-data.mjs
+
+      - name: Build dashboard
+        working-directory: dashboard
+        run: npm run build
 
       - name: Upload reports
         if: always()
@@ -42,3 +60,4 @@ jobs:
             reports/
             screenshots/
             target/surefire-reports/
+            dashboard/dist/

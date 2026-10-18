@@ -4,5 +4,11 @@ target/
 *.iml
 *.log
 .DS_Store
+.env
+.env.*
+*.pem
 screenshots/*.png
 reports/*.html
+dashboard/node_modules/
+dashboard/dist/
+dashboard/.vite/

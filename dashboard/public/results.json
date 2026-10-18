@@ -1,0 +1,185 @@
+{
+  "summary": {
+    "total": 19,
+    "passed": 19,
+    "failed": 0,
+    "skipped": 0,
+    "durationMs": 161289,
+    "suiteName": "AutoTest Pro Suite",
+    "startedAt": "2026-10-18T11:42:05 IST",
+    "finishedAt": "2026-10-18T11:44:47 IST"
+  },
+  "tests": [
+    {
+      "name": "loginWithValidCredentials",
+      "className": "tests.LoginTests",
+      "description": "Login with valid demo credentials",
+      "status": "PASS",
+      "durationMs": 1203
+    },
+    {
+      "name": "loginWithInvalidPasswordShouldShowError",
+      "className": "tests.LoginTests",
+      "description": "Login with invalid password should show an error",
+      "status": "PASS",
+      "durationMs": 1703
+    },
+    {
+      "name": "loginWithEmptyUsernameShouldShowError",
+      "className": "tests.LoginTests",
+      "description": "Empty username should show a validation error",
+      "status": "PASS",
+      "durationMs": 4754
+    },
+    {
+      "name": "loginWithEmptyPasswordShouldShowError",
+      "className": "tests.LoginTests",
+      "description": "Empty password should show a validation error",
+      "status": "PASS",
+      "durationMs": 1392
+    },
+    {
+      "name": "verifyAppropriateErrorMessageIsDisplayed",
+      "className": "tests.LoginTests",
+      "description": "Verify appropriate error message is generated for invalid login",
+      "status": "PASS",
+      "durationMs": 1094
+    },
+    {
+      "name": "logoutFunctionalityWorks",
+      "className": "tests.NavigationTests",
+      "description": "Logout should return the user to the login page",
+      "status": "PASS",
+      "durationMs": 2123
+    },
+    {
+      "name": "protectedPagesRequireAuthentication",
+      "className": "tests.NavigationTests",
+      "description": "Protected pages should require an authenticated session",
+      "status": "PASS",
+      "durationMs": 488
+    },
+    {
+      "name": "navigationBetweenProductsCartAndCheckoutWorks",
+      "className": "tests.NavigationTests",
+      "description": "Navigation between product, cart, and checkout pages should work correctly",
+      "status": "PASS",
+      "durationMs": 2472
+    },
+    {
+      "name": "inventoryPageLoadsAfterLogin",
+      "className": "tests.InventoryTests",
+      "description": "Inventory page loads after successful login",
+      "status": "PASS",
+      "durationMs": 2036
+    },
+    {
+      "name": "productNamesAndPricesAreDisplayed",
+      "className": "tests.InventoryTests",
+      "description": "All product names and prices should be visible",
+      "status": "PASS",
+      "durationMs": 2092
+    },
+    {
+      "name": "sortingProductsByPriceLowToHighWorks",
+      "className": "tests.InventoryTests",
+      "description": "Product sorting should work when the user selects a sort option",
+      "status": "PASS",
+      "durationMs": 2519
+    },
+    {
+      "name": "cartIconIsVisible",
+      "className": "tests.InventoryTests",
+      "description": "Cart icon should be visible on the inventory page",
+      "status": "PASS",
+      "durationMs": 2031
+    },
+    {
+      "name": "completeCheckoutFlowSuccessfully",
+      "className": "tests.CheckoutTests",
+      "description": "Complete checkout flow should succeed with valid fictional data",
+      "status": "PASS",
+      "durationMs": 4616
+    },
+    {
+      "name": "checkoutOverviewDisplaysSelectedProduct",
+      "className": "tests.CheckoutTests",
+      "description": "Checkout overview should display the selected product",
+      "status": "PASS",
+      "durationMs": 8549
+    },
+    {
+      "name": "checkoutValidationWithMissingFields",
+      "className": "tests.CheckoutTests",
+      "description": "Checkout should validate required fields before proceeding",
+      "status": "PASS",
+      "durationMs": 2492
+    },
+    {
+      "name": "addProductToCartUpdatesBadge",
+      "className": "tests.CartTests",
+      "description": "Adding a product updates the cart badge",
+      "status": "PASS",
+      "durationMs": 1611
+    },
+    {
+      "name": "selectedProductAppearsInCart",
+      "className": "tests.CartTests",
+      "description": "Selected product should appear in cart",
+      "status": "PASS",
+      "durationMs": 2783
+    },
+    {
+      "name": "removeProductFromCart",
+      "className": "tests.CartTests",
+      "description": "Removing a product should remove it from the cart",
+      "status": "PASS",
+      "durationMs": 1471
+    },
+    {
+      "name": "cartBecomesEmptyWhenAllProductsAreRemoved",
+      "className": "tests.CartTests",
+      "description": "All products removed should leave the cart empty",
+      "status": "PASS",
+      "durationMs": 3689
+    }
+  ],
+  "classBreakdown": [
+    {
+      "className": "tests.LoginTests",
+      "total": 5,
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "className": "tests.InventoryTests",
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "className": "tests.CartTests",
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "className": "tests.NavigationTests",
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "className": "tests.CheckoutTests",
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0
+    }
+  ],
+  "generatedAt": "2026-10-18T06:48:31.834Z"
+}
